@@ -1,0 +1,21 @@
+{
+  "name": "loopstudios",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./input.css -o ./css/output.css",
+    "watch": "npx @tailwindcss/cli -i ./input.css -o ./css/output.css --watch",
+    "devserver": "live-server",
+    "run-all": " npm-run-all --parallel devserver watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.9",
+    "@tailwindcss/postcss": "^4.0.9",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.9"
+  }
+}
